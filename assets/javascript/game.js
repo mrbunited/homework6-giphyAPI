@@ -18,7 +18,7 @@ $(document).ready(function() {
           console.log(response);
           
           var newDiv = $("<div>");
-          
+
         for (var a = 0; a < response.data.length; a++) {
 
         	var rating = response.data[a].rating;
@@ -33,8 +33,9 @@ $(document).ready(function() {
         	animalImage.attr("data-state", "still");
         	animalImage.attr("data-still", stillImage);
         	animalImage.attr("data-animate", animatedImg);
-        	newDiv.append(p);
-        	newDiv.append(animalImage);
+        	
+          newDiv.append(animalImage);
+          newDiv.append(p);
           $("#images-display").prepend(newDiv);
 }
          });
