@@ -16,9 +16,10 @@ $(document).ready(function() {
          .then(function(response) {
            var imageUrl = [];
           console.log(response);
+          
+          var newDiv = $("<div>");
+          
         for (var a = 0; a < response.data.length; a++) {
-        	
-        	var newDiv = $("<div>");
 
         	var rating = response.data[a].rating;
         	var animatedImg = response.data[a].images.fixed_height.url;
@@ -26,6 +27,7 @@ $(document).ready(function() {
         	var animalImage = $("<img>");
         	var p = $("<p>").text("Rating: " + rating);
 
+          
         	animalImage.attr("src", stillImage);
         	animalImage.addClass("gif");
         	animalImage.attr("data-state", "still");

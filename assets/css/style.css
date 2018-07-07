@@ -1,8 +1,15 @@
-/* .body{
-    background : ../img/background-img.jpg;
-} */
 
-
+body{
+max-width:1000px;
+margin: auto;
+background-image: url("../img/background-img.jpg");
+color: white;
+font-family: 'Frijole', cursive;
+font-size: 30px;
+text-align: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
 .btn-primary {
     margin: 5px;
 }
